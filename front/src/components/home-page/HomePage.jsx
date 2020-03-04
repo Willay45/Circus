@@ -1,6 +1,8 @@
 import React from 'react';
 import './HomePage.css'
 import NavBar from "../global-ui/navbar/NavBar";
+import { NavLink } from "react-router-dom";
+
 const HomePage = () => {
   return (
     <div className="home-page-container">
@@ -25,7 +27,9 @@ const HomePage = () => {
               l'une de nos monture fétiche en pleinne glisse,
               avec son jolie bruit de rupteur. Rejoins nous en tant que spéctateur au prochain run.
             </p>
-            <p className="show-button">Show</p>
+            <NavLink activeClassName="active" to='/show' className="link">
+              <p className="show-button">Show</p>
+            </NavLink>
           </div>
 
           <div className="home-page-driver">
@@ -35,7 +39,9 @@ const HomePage = () => {
               Rejoin nous dans la battle zone pour des affrontement toujours plus epic,
               m'étant vos compétences de pilote a rude épreuve.
             </p>
-            <p className="battle-zone-button">Battle Zone</p>
+            <NavLink activeClassName="active" to='/battle-zone' className="link">
+              <p className="battle-zone-button">Battle Zone</p>
+            </NavLink>
           </div>
         </div>
 

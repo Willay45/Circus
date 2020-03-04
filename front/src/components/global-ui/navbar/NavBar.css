@@ -8,6 +8,10 @@
     box-shadow: 3px 3px 3px #000000b5;
 }
 
+.link {
+    text-decoration: none;
+}
+
 .nav-bar-logo {
     position: absolute;
     top: 0;
