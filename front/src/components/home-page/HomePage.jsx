@@ -27,8 +27,8 @@ const HomePage = () => {
               l'une de nos monture fétiche en pleinne glisse,
               avec son jolie bruit de rupteur. Rejoins nous en tant que spéctateur au prochain run.
             </p>
-            <NavLink activeClassName="active" to='/show' className="link">
-              <p className="show-button">Show</p>
+            <NavLink activeClassName="active" to='/watcher' className="link">
+              <p className="show-button">Watcher</p>
             </NavLink>
           </div>
 

@@ -3,7 +3,7 @@ import './App.css';
 import { Switch, Route } from 'react-router-dom';
 import HomePage from "./components/home-page/HomePage";
 import BattleZone from "./components/battle-zone/BattleZone";
-import Show from "./components/show/Show";
+import Watcher from "./components/watcher/Watcher";
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
       <Switch>
         <Route exact path={'/'} component={HomePage} />
         <Route exact path={'/battle-zone'} component={BattleZone} />
-        <Route exact path={'/show'} component={Show} />
+        <Route exact path={'/watcher'} component={Watcher} />
       </Switch>
     </div>
   );

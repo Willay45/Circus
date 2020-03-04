@@ -1,0 +1,28 @@
+
+.watcher-form {
+    margin-top: 40px;
+    background-color: black;
+    padding: 20px;
+    opacity: 80%;
+    border-radius: 10px;
+    display: flex;
+    width: 100%;
+}
+
+
+.watcher-input {
+    margin: 10px;
+    font-size: 25px;
+    border-radius: 10px;
+    border: none;
+}
+
+.watcher-submit {
+    margin-left: 20px;
+    background-color: #2759BB;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    color: white;
+    border: none;
+}

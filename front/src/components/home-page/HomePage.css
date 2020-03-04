@@ -12,6 +12,7 @@
 
 .home-page-title {
     font-size: 45px;
+    text-transform: uppercase;
 }
 
 .home-page-description-container {
@@ -28,6 +29,13 @@
 
 .home-page-presentaion h2 {
     margin-top: 0;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.home-page-presentaion p {
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .home-page-viewer {
@@ -37,9 +45,19 @@
     background-color: black;
     padding: 20px;
     opacity: 80%;
-    width: 200px;
+    width: 500px;
     border-radius: 10px;
-    margin-right: 150px;
+    margin-right: 140px;
+}
+
+.home-page-viewer h2 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.home-page-viewer p {
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .home-page-driver {
@@ -49,9 +67,19 @@
     background-color: black;
     padding: 20px;
     opacity: 80%;
-    width: 200px;
-    margin-left: 150px;
+    width: 500px;
+    margin-left: 140px;
     border-radius: 10px;
+}
+
+.home-page-driver h2 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.home-page-driver p {
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .show-button {

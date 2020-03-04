@@ -11,6 +11,7 @@
 
 .battle-zone-title {
     font-size: 45px;
+    text-transform: uppercase;
 }
 
 .battle-zone-description {
@@ -22,4 +23,14 @@
     display: flex;
     flex-direction: column;
     width: 60%;
+}
+
+.battle-zone-description h2 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.battle-zone-description p {
+    font-size: 20px;
+    font-weight: bold;
 }
