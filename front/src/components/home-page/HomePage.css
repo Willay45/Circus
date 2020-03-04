@@ -1,0 +1,67 @@
+
+
+.home-container {
+    background-image: url("https://wallpaperplay.com/walls/full/2/8/9/229647.jpg");
+    height: 100vh;
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home-page-title {
+    font-size: 45px;
+}
+
+.home-page-description-container {
+    margin-top: 150px;
+    display: flex;
+}
+
+.home-page-presentaion {
+    background-color: black;
+    padding: 20px;
+    opacity: 80%;
+    border-radius: 10px;
+}
+
+.home-page-presentaion h2 {
+    margin-top: 0;
+}
+
+.home-page-viewer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    padding: 20px;
+    opacity: 80%;
+    width: 200px;
+    border-radius: 10px;
+    margin-right: 150px;
+}
+
+.home-page-driver {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    padding: 20px;
+    opacity: 80%;
+    width: 200px;
+    margin-left: 150px;
+    border-radius: 10px;
+}
+
+.show-button {
+    background-color: #2759BB;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.battle-zone-button {
+    background-color: #2759BB;
+    padding: 10px;
+    border-radius: 10px;
+}
