@@ -9,6 +9,7 @@ const NavBar = () => {
         <p className="nav-bar-show">Les Show</p>
         <p className="nav-bar-booking">Réserver un show</p>
         <p className="nav-bar-car">Véhicules</p>
+        <p>Les Run</p>
       </div>
     </div>
   );
