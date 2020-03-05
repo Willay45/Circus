@@ -1,0 +1,9 @@
+
+.driver-card-container {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+.driver-card-container p {
+    margin: 10px;
+}

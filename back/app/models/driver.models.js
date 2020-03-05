@@ -26,7 +26,7 @@ Driver.findAll = result => {
 
 
 Driver.delete = (id, result) => {
-  db.query('DELETE FROM drive WHERE id = ?', [id], (error, dbResult) => {
+  db.query('DELETE FROM driver WHERE id = ?', [id], (error, dbResult) => {
     if (error) {
       return result(error, null);
     }

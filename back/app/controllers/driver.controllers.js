@@ -15,7 +15,7 @@ exports.create = (request, response) => {
     if (error) {
       return response.status(500).send({
         message:
-          error.message || 'Some error occurred while creating the drive.'
+          error.message || 'Some error occurred while creating the driver.'
       });
     }
     return response.send(data);
@@ -38,11 +38,11 @@ exports.delete = (request, response) => {
     if (error) {
       if (error.kind === 'not_found') {
         response.status(404).send({
-          message: `Not found memory with id ${request.params.driverId}.`
+          message: `Not found driver with id ${request.params.driverId}.`
         });
       } else {
         response.status(500).send({
-          message: `Could not delete memory with id ${request.params.driverId}`
+          message: `Could not delete driver with id ${request.params.driverId}`
         });
       }
     } else {

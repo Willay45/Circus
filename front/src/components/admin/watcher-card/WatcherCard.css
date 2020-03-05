@@ -1,0 +1,10 @@
+
+.watcher-card-container {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+
+}
+.watcher-card-container p {
+    margin: 10px;
+}
