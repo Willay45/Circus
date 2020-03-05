@@ -1,6 +1,6 @@
 const express = require('express');
 const watcher = require('../controllers/watcher.controllers.js');
-const controlInput = require('../middleware/controlInput.middleware');
+const controlInput = require('../middleware/controlInput.watcher.middleware');
 
 const router = express.Router();
 

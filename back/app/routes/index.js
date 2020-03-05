@@ -1,7 +1,7 @@
 const express = require('express');
 
-const driver = require('./driver.routes');
-const watcher = require('./watcher.routes');
+const driver = require('./driver.routes.js');
+const watcher = require('./watcher.routes.js');
 
 const router = express.Router();
 

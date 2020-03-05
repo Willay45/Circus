@@ -2,7 +2,7 @@ const db = require('./database.model');
 
 const Driver = function(driver) {
   this.pseudo = driver.pseudo;
-  this.car = drive.car;
+  this.car = driver.car;
   this.snap = driver.snap;
 };
 

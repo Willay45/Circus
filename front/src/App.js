@@ -5,12 +5,14 @@ import HomePage from "./components/home-page/HomePage";
 import BattleZone from "./components/battle-zone/BattleZone";
 import Watcher from "./components/watcher/Watcher";
 import NavBar from "./components/global-ui/navbar/NavBar";
+import DashBoard from "./components/admin/DashBoard";
 
 function App() {
   return (
     <div className="App">
       <Switch>
         <Route exact path={'/'} component={HomePage} />
+        <Route exact path={'/admin'} component={DashBoard} />
         <Route exact path={'/battle-zone'} component={BattleZone} />
         <Route exact path={'/watcher'} component={Watcher} />
         <Route exact path={'/test'} component={NavBar} />
