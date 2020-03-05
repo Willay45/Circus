@@ -5,11 +5,10 @@ import FormWatcher from "./form-watcher/FormWatcher";
 
 const Watcher = () => {
   return (
-    <div>
-      <NavBar/>
       <div className="watcher-container">
         <div className="watcher-title">
           <h1>Watcher</h1>
+          <NavBar/>
         </div>
         <div className="watcher-description">
           <h2>Bienvenue</h2>
@@ -23,7 +22,6 @@ const Watcher = () => {
           <FormWatcher/>
         </div>
       </div>
-    </div>
   );
 };
 

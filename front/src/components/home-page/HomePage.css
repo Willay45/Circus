@@ -16,7 +16,7 @@
 }
 
 .home-page-description-container {
-    margin-top: 130px;
+    margin-top: 50px;
     display: flex;
 }
 
@@ -89,7 +89,7 @@
     color: white;
 }
 
-.link {
+.linkhome {
     text-decoration: none;
 }
 

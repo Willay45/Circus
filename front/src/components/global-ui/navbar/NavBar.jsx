@@ -6,20 +6,15 @@ const NavBar = () => {
   return (
     <div className="nav-bar-container">
       <NavLink activeClassName="active" exact to='/' className='link'>
-        <img
-          className="nav-bar-logo"
-          src="https://image.noelshack.com/fichiers/2020/10/3/1583327987-e36.png"
-          alt="logo"
-        />
+        <i style={{color: "white"}} className="fas fa-warehouse fa-2x"></i>
       </NavLink>
-      <div className="nav-bar-container-text">
-        <NavLink activeClassName="active" to='/show' className='link'>
-          <p>Les Show</p>
-        </NavLink>
-        <NavLink activeClassName="active" to='/battle-zone' className='link'>
-          <p>Battle Zone</p>
-        </NavLink>
-      </div>
+      <NavLink activeClassName="active" to='/watcher' className='link'>
+        <i style={{color: "white"}} className="fas fa-binoculars fa-2x"></i>
+      </NavLink>
+      <NavLink activeClassName="active" to='/battle-zone' className='link'>
+        <i style={{color: "white"}} className="fas fa-car fa-2x"></i>
+      </NavLink>
+
     </div>
   );
 };

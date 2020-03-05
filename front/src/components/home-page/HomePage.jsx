@@ -5,11 +5,10 @@ import { NavLink } from "react-router-dom";
 
 const HomePage = () => {
   return (
-    <div className="home-page-container">
-      <NavBar/>
       <div className="home-container">
         <div className="home-page-title">
           <h1>Willy fait son cirque</h1>
+          <NavBar/>
         </div>
 
         <div className="home-page-presentaion">
@@ -27,7 +26,7 @@ const HomePage = () => {
               l'une de nos monture fétiche en pleinne glisse,
               avec son jolie bruit de rupteur. Rejoins nous en tant que spéctateur au prochain run.
             </p>
-            <NavLink activeClassName="active" to='/watcher' className="link">
+            <NavLink activeClassName="active" to='/watcher' className="linkhome">
               <p className="show-button">Watcher</p>
             </NavLink>
           </div>
@@ -39,14 +38,13 @@ const HomePage = () => {
               Rejoin nous dans la battle zone pour des affrontement toujours plus epic,
               m'étant vos compétences de pilote a rude épreuve.
             </p>
-            <NavLink activeClassName="active" to='/battle-zone' className="link">
+            <NavLink activeClassName="active" to='/battle-zone' className="linkhome">
               <p className="battle-zone-button">Battle Zone</p>
             </NavLink>
           </div>
         </div>
 
       </div>
-    </div>
   );
 };
 

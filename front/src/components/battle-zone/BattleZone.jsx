@@ -4,11 +4,10 @@ import FormBattleZone from "./form-battle-zone/FormBattleZone";
 import './BattleZone.css';
 const BattleZone = () => {
   return (
-    <div>
-      <NavBar />
       <div className="battle-zone">
         <div className="battle-zone-title">
           <h1>Battle Zone</h1>
+          <NavBar />
         </div>
         <div className="battle-zone-description">
           <h2>Bienvenue dans la Battle Zone</h2>
@@ -24,7 +23,7 @@ const BattleZone = () => {
           <FormBattleZone/>
         </div>
       </div>
-    </div>
+
   );
 };
 
