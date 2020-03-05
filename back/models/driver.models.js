@@ -1,24 +1,22 @@
 const db = require('./database.model');
 
-const Memory = function(memory) {
-  this.name = memory.name;
-  this.price = memory.price;
-  this.description = memory.description;
-  this.capacity = memory.capacity;
-  this.size = memory.size;
+const Driver = function(driver) {
+  this.pseudo = driver.pseudo;
+  this.car = drive.car;
+  this.snap = driver.snap;
 };
 
-Memory.create = (newMemory, result) => {
-  db.query('INSERT INTO memory SET ?', [newMemory], (error, dbResult) => {
+Driver.create = (newDriver, result) => {
+  db.query('INSERT INTO driver SET ?', [newDriver], (error, dbResult) => {
     if (error) {
       return result(error, null);
     }
-    return result(null, { id: dbResult.insertId, ...newMemory });
+    return result(null, { id: dbResult.insertId, ...newDriver });
   });
 };
 
-Memory.findAll = result => {
-  db.query('SELECT * FROM memory', (error, dbResult) => {
+Driver.findAll = result => {
+  db.query('SELECT * FROM driver', (error, dbResult) => {
     if (error) {
       return result(error, null);
     }
@@ -26,24 +24,9 @@ Memory.findAll = result => {
   });
 };
 
-Memory.update = (id, memory, result) => {
-  db.query(
-    'UPDATE memory SET ? WHERE id = ?',
-    [memory, id],
-    (error, response) => {
-      if (error) {
-        return result(error, null);
-      }
-      if (response.affectedRows === 0) {
-        return result({ kind: 'not_found' }, null);
-      }
-      return result(null, { id: Number(id), ...memory });
-    }
-  );
-};
 
-Memory.delete = (id, result) => {
-  db.query('DELETE FROM memory WHERE id = ?', [id], (error, dbResult) => {
+Driver.delete = (id, result) => {
+  db.query('DELETE FROM drive WHERE id = ?', [id], (error, dbResult) => {
     if (error) {
       return result(error, null);
     }
@@ -54,4 +37,4 @@ Memory.delete = (id, result) => {
   });
 };
 
-module.exports = Memory;
+module.exports = Driver;
