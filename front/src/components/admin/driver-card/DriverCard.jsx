@@ -10,7 +10,7 @@ const DriverCard = ({ pseudo, car, snap, id}) => {
       <p>{car}</p>
       <p>{snap}</p>
       <i
-        style={{color: 'white', cursor: 'pointer'}}
+        style={{color: 'white', cursor: 'pointer', marginRight: '20px'}}
         className="fas fa-trash-alt"
         onClick={async () => {
         await deleteDriver(id);

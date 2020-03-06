@@ -2,6 +2,7 @@ import React from 'react';
 import './HomePage.css'
 import NavBar from "../global-ui/navbar/NavBar";
 import { NavLink } from "react-router-dom";
+import playSound from '../../tech/music.service'
 
 const HomePage = () => {
   return (
@@ -27,7 +28,7 @@ const HomePage = () => {
               avec son jolie bruit de rupteur. Rejoins nous en tant que spéctateur au prochain run.
             </p>
             <NavLink activeClassName="active" to='/watcher' className="linkhome">
-              <p className="show-button">Watcher</p>
+              <p onClick={() => {playSound('horn')}} className="show-button">Watcher</p>
             </NavLink>
           </div>
 
@@ -39,7 +40,7 @@ const HomePage = () => {
               m'étant vos compétences de pilote a rude épreuve.
             </p>
             <NavLink activeClassName="active" to='/battle-zone' className="linkhome">
-              <p className="battle-zone-button">Battle Zone</p>
+              <p onClick={() => {playSound('horn')}} className="battle-zone-button">Battle Zone</p>
             </NavLink>
           </div>
         </div>

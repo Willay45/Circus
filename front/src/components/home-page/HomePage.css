@@ -13,11 +13,13 @@
 .home-page-title {
     font-size: 45px;
     text-transform: uppercase;
+    text-align: center;
 }
 
 .home-page-description-container {
     margin-top: 50px;
     display: flex;
+    height: 100%;
 }
 
 .home-page-presentaion {
@@ -46,8 +48,13 @@
     padding: 20px;
     opacity: 80%;
     width: 500px;
+    height: 300px;
     border-radius: 10px;
     margin-right: 140px;
+}
+
+.home-page-viewer:hover{
+    zoom: 110%;
 }
 
 .home-page-viewer h2 {
@@ -68,8 +75,13 @@
     padding: 20px;
     opacity: 80%;
     width: 500px;
+    height: 300px;
     margin-left: 140px;
     border-radius: 10px;
+}
+
+.home-page-driver:hover{
+    zoom: 110%;
 }
 
 .home-page-driver h2 {
@@ -89,6 +101,10 @@
     color: white;
 }
 
+.show-button:active {
+    transform: scale(.95);
+}
+
 .linkhome {
     text-decoration: none;
 }
@@ -98,4 +114,8 @@
     background-color: #2759BB;
     padding: 10px;
     border-radius: 10px;
+}
+
+.battle-zone-button:active {
+    transform: scale(.95);
 }

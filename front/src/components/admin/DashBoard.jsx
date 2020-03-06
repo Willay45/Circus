@@ -16,7 +16,7 @@ const DashBoard = () => {
 
   return (
     <div className="dashboard-container">
-      <h1>DashBoard</h1>
+      <h1 className="title-admin">DashBoard</h1>
       <div className="card-container">
         <div className="component-driver">
           <h2>Drivers</h2>

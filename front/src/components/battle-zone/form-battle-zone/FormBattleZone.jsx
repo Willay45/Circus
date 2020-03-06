@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './FormBattleZone.css';
 import { postDriver } from "../../../api/Api";
+import playSound from "../../../tech/music.service";
 
 const FormBattleZone = () => {
   const [pseudo, setPseudo] = useState();
@@ -22,7 +23,10 @@ const FormBattleZone = () => {
 
   return (
     <div className="battle-zone-form">
-      <form className="battle-zone-form-container" onSubmit={sendDriver}>
+      <form className="battle-zone-form-container" onSubmit={() => {
+        playSound('horn');
+        sendDriver();
+      }}>
         <label className='battle-input' htmlFor="">Pseudo</label>
         <input className='battle-input' type="pseudo" onChange={event => setPseudo(event.target.value)}/>
 
@@ -32,7 +36,7 @@ const FormBattleZone = () => {
         <label className='battle-input' htmlFor="">Snap</label>
         <input className='battle-input' type="pseudo" onChange={event => setSnap(event.target.value)}/>
 
-        <input className="battle-submit" type="submit"/>
+        <input className="battle-submit" type="submit" />
       </form>
     </div>
   );

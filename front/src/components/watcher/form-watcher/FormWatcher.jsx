@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './FormWatch.css';
 import {postWatcher} from "../../../api/Api";
+import playSound from "../../../tech/music.service";
 
 const FormWatcher = () => {
   const [snap, setSnap] = useState();
@@ -16,8 +17,11 @@ const FormWatcher = () => {
     }
   };
   return (
-    <div className="watcher-form" onSubmit={sendWatcher}>
-      <form>
+    <div className="watcher-form">
+      <form onSubmit={() => {
+        playSound('horn');
+        sendWatcher();
+      }}>
         <label className="watcher-input" htmlFor="">Snap</label>
         <input className="watcher-input" type="pseudo" onChange={event => setSnap(event.target.value)}/>
 

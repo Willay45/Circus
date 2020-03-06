@@ -25,3 +25,11 @@ export const getWatcher = () => {
 export const deleteWatcher = id => {
   return axios.delete(`${url}/watchers/${id}`).then(response => response.data);
 };
+
+export const getComment = () => {
+  return axios.get(`${url}/messages`).then(response => response.data);
+};
+
+export const postComment = comment => {
+  return axios.post(`${url}/messages`, comment).then(response => response.data);
+};

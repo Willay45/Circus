@@ -7,3 +7,7 @@
 .driver-card-container p {
     margin: 10px;
 }
+
+.fas fa-trash-alt:active {
+    transform: scale(.95);
+}

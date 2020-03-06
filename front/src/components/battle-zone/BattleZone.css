@@ -10,6 +10,7 @@
 }
 
 .battle-zone-title {
+    text-align: center;
     font-size: 45px;
     text-transform: uppercase;
 }

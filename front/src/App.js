@@ -4,8 +4,8 @@ import { Switch, Route } from 'react-router-dom';
 import HomePage from "./components/home-page/HomePage";
 import BattleZone from "./components/battle-zone/BattleZone";
 import Watcher from "./components/watcher/Watcher";
-import NavBar from "./components/global-ui/navbar/NavBar";
 import DashBoard from "./components/admin/DashBoard";
+import Garage from "./components/garage/Garage";
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
         <Route exact path={'/admin'} component={DashBoard} />
         <Route exact path={'/battle-zone'} component={BattleZone} />
         <Route exact path={'/watcher'} component={Watcher} />
-        <Route exact path={'/test'} component={NavBar} />
+        <Route exact path={'/garage'} component={Garage} />
       </Switch>
     </div>
   );

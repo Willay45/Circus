@@ -10,9 +10,10 @@
     align-items: center;
 }
 
-.dashboard-container h1 {
+.title-admin {
     font-size: 45px;
     text-transform: uppercase;
+    text-align: center;
 }
 
 .card-container {
